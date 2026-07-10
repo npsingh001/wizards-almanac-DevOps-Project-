@@ -1,5 +1,6 @@
 services:
   web:
     image: wizards-almanac:${APP_VERSION:-1.0.0}
+    ports:
       - "5000:5000"
     restart: unless-stopped
